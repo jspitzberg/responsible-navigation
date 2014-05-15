@@ -3,7 +3,7 @@
     z-index: 99;
     background: #fff;
     border-radius: 0 $border-radius $border-radius $border-radius;
-    box-shadow: 1px 11px 15px $dark-gray;
+    box-shadow: 1px 8px 10px $dark-gray;
     padding: $gap*2;
     // max-width: 260px; use inline-block instead
 
@@ -22,6 +22,7 @@
 @media screen and (max-width: 960px) {
     .setpos {
         left: 10px;
+        width: auto;
     }
 }
 
