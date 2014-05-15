@@ -1,0 +1,23 @@
+.card-deck {
+    -webkit-box-shadow: 11px 0px 11px -11px $dark-gray;
+            box-shadow: 11px 0px 11px -11px $dark-gray;
+    overflow: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.card-deck-inner {
+    width: 2225px;
+    padding: $gap 2px;
+    overflow: hidden;
+
+    .event-card {
+        float: left;
+        width: 175px;
+        margin-right: $gap;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}    

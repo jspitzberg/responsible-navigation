@@ -1,0 +1,42 @@
+header {
+    background: $dark-gray;
+    color: #fff;
+    padding: $gap;
+    height: 50px;
+}
+
+.header-inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    margin-left: $gap;
+}
+
+#menu-link {
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: $border-radius;
+    display: inline-block;
+    padding: 5px 10px;
+    min-width: 80px;
+    text-align: center;
+}
+
+#menu-link:before {
+    content: "☰ Menu";
+}
+
+#menu-link.open {
+    background: #fff;
+    color: $gray;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: $border-radius $border-radius 0 0;
+}
+
+#menu-link.open:before {
+    content: "Close";
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>"Off panel" Menu</title>
+
+    <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div id="menu-link" href=""></div>
+            <div class="logo">LOGO</div>
+        </div>
+    </header>
+
+    <article>
+        <p>Bacon ipsum dolor sit amet tenderloin tongue sirloin kevin boudin pastrami.  Prosciutto pastrami salami ham hock capicola pork loin strip steak short ribs t-bone chuck jowl chicken.  Drumstick jerky corned beef capicola pancetta.  Short loin turkey meatloaf, ball tip filet mignon porchetta pork chop pork loin chicken salami sirloin.  Ball tip chuck tri-tip venison, pastrami pancetta filet mignon turducken fatback bresaola meatloaf short ribs rump boudin turkey.  Ham hock hamburger shank prosciutto bresaola tri-tip beef ribs, filet mignon biltong drumstick spare ribs turkey shankle corned beef meatball.  Pork hamburger kielbasa shoulder.</p>
+        <p>Pastrami chuck sirloin beef ground round landjaeger frankfurter jerky ball tip pig flank.  Sausage salami kevin meatloaf, pastrami ground round cow pork chop kielbasa strip steak beef ribs swine pancetta.  Capicola biltong t-bone beef ribs chicken jerky.  Frankfurter landjaeger pork loin pastrami, cow porchetta short loin prosciutto shankle pork.  Pig brisket jowl boudin.  Pork loin tenderloin bacon bresaola landjaeger pastrami spare ribs short loin kevin capicola turkey chicken beef ribs shank pork belly.  Flank tenderloin meatball porchetta, landjaeger tongue shank pancetta leberkas short loin.</p>
+        <p>Pig andouille prosciutto, sirloin hamburger bacon ball tip.  Sausage pork chop kielbasa shankle short ribs, t-bone ribeye pig spare ribs strip steak prosciutto filet mignon swine tri-tip.  Swine rump short loin pork belly turkey, landjaeger sausage pancetta tail frankfurter meatloaf beef bacon.  Ham hock pork jerky porchetta ribeye cow frankfurter.  Pancetta tongue beef ribs pastrami bacon.  Frankfurter rump short ribs, filet mignon strip steak biltong meatball kielbasa prosciutto pancetta short loin.</p>
+        <p>Pork belly bresaola ball tip swine.  Ball tip beef pork loin rump turkey.  Hamburger tenderloin porchetta ham hock.  Short loin jerky venison, spare ribs pork loin pork t-bone cow rump pig beef sausage shankle prosciutto corned beef.  Ball tip ham brisket, fatback short ribs rump pork kevin corned beef swine doner jerky jowl.  Kevin corned beef pork chop filet mignon chicken beef meatloaf tail swine ball tip ground round.  Biltong jowl pig, tenderloin tail corned beef shankle frankfurter pork chop tri-tip.</p>
+        <p>Jowl beef meatloaf, pastrami ham hock pig turkey porchetta capicola turducken ham shank swine.  Strip steak drumstick flank short loin.  Rump cow pork belly porchetta salami, shank turducken frankfurter boudin venison tongue fatback drumstick.  Venison shoulder pancetta ham hock, ribeye sirloin tongue turkey ham.  Rump bacon pork loin, tongue doner flank pastrami jowl corned beef.  Shankle sirloin boudin landjaeger short ribs pastrami ball tip salami pork chop turducken shoulder frankfurter shank.</p>
+    </article>
+
+<div class="setpos">
+    <div class="setpos-inner">
+    <nav id="off-panel" class="off-panel">
+        <form>
+            <input type="search" placeholder="Search for events">
+            <button>Go</button>
+        </form>
+        <h3>Categories</h3>
+        <ul>
+            <li>
+                <a href="">Running</a>
+            </li>
+            <li>
+                <a href="">Cycling</a>
+            </li>
+            <li>
+                <a href="">Triathlon</a>
+            </li>
+            <li>
+                <a href="">Swimming</a>
+            </li>
+            <li>
+                <a href="">Training</a>
+            </li>
+        </ul>
+        <h3>Organizers</h3>
+        <ul>
+            <li>
+                <a href="">Sign In</a>
+            </li>
+            <li>
+                <a href="">Sign Up</a>
+            </li>
+            <li>
+                <a href="">Learn More</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</div>
+
+    <script>
+        var showHide = function(){
+            // alert('yes');
+            var offP = document.getElementById("off-panel");
+            var mLink = document.getElementById("menu-link");
+            offP.classList.toggle('open');
+            mLink.classList.toggle('open');
+        };
+
+        window.onload = function() {
+            document.getElementById("menu-link").addEventListener( 'click' , showHide );
+        }
+
+    </script>
+
+</body>
+</html>
